@@ -35,10 +35,10 @@ function Temperature({weather: {
         <div>
           <img src={iconUrlFromCode(icon)} />
         </div>
-        <p>{`${temp.toFixed()}°`}</p>
+        <p className={classes.temp} >{`${temp.toFixed()}°`}</p>
         <div className={classes.weather}>
           <p>{details}</p>
-        </div>
+        </div>  
       </div>
       <div className={classes.weatherDetails}>
         <p>Wether details</p>

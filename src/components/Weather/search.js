@@ -61,9 +61,9 @@ setCity('')
             className={classes.metric}
             // onClick={handleUnitsChange}
           >
-            °C
+        celsius
           </button>
-          <p className="text-xl text-white mx-1">|</p>
+          <p className={classes.or}>   or </p>
           <button
             name="imperial"
           onClick={handleUnitsChange}
@@ -71,7 +71,7 @@ setCity('')
             className={classes.imperial}
             // onClick={handleUnitsChange}
           >
-            °F
+           Fahrenheit
           </button>
         </div>
       </div>

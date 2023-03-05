@@ -1,6 +1,7 @@
 .scroll{
-   max-width: 300px;
+   max-width: 350px;
     /* height: 100vh; */
+    margin: 1px;
     /* overflow-y: scroll; */
     /* overflow-y: hidden; */
     overflow-x: scroll;

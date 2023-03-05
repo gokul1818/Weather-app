@@ -56,8 +56,12 @@ function search() {
       {weather ? (
         <>
           <Time weather={weather} />
+
           <Temperature weather={weather} />
           <Forecast title={"hourlyForecast"} items={weather.hourly} />
+
+
+          
           <Forecast title={"DailyForecast"} items={weather.daily} />
         </>
       ) : (

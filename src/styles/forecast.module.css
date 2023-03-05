@@ -1,0 +1,49 @@
+.scroll{
+   max-width: 300px;
+    /* height: 100vh; */
+    /* overflow-y: scroll; */
+    /* overflow-y: hidden; */
+    overflow-x: scroll;
+  
+
+}
+.scroll::-webkit-scrollbar {
+    /* display: ; */
+/* width: 0;
+height: 0; */
+    background: transparent;
+  }
+
+.title {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    /* padding-top: 10px; */
+    font-weight: 700;
+}
+.Forecast{
+
+    display: flex;
+    justify-content: space-between;
+    /* font-size: medium; */
+
+padding: 10px;
+
+}
+.ForecastDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+
+}
+.ForecastDetails p{
+    font-size: 13px;
+    padding: 5px;
+}
+.ForecastDetails img{
+    height: 35px;
+    width: 35px;
+}

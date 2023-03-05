@@ -1,7 +1,8 @@
 .scroll{
-   max-width: 450px;
+   max-width: 400px;
     /* height: 100vh; */
-    margin: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
     /* overflow-y: scroll; */
     /* overflow-y: hidden; */
     overflow-x: scroll;
@@ -20,15 +21,16 @@ height: 0; */
     justify-content: start;
     margin-top: 10px;
     /* padding-top: 10px; */
-    font-weight: 700;
+    /* font-weight: 400; */
 }
 .Forecast{
 
     display: flex;
-    justify-content: space-between;
-    /* font-size: medium; */
+    /* justify-content: flex-start; */
+    font-size: 25px;
+    /* align-items: center; */
 
-padding: 10px;
+padding-top: 10px;
 
 }
 .ForecastDetails{
@@ -36,15 +38,15 @@ padding: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding-right: 15px;
 
 
 }
 .ForecastDetails p{
-    font-size: 13px;
-    padding: 5px;
+    font-size: 15px;
+    /* padding: 5px; */
 }
 .ForecastDetails img{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }

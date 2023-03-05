@@ -15,7 +15,7 @@ function Forecast({ title,items }) {
             <div 
             key={index}
              className={classes.ForecastDetails}>
-              <p>{item.title}</p>
+              <p >{item.title}</p>
               <img src={iconUrlFromCode(item.icon)}
               />
               <p>{`${item.temp.toFixed()}°`}</p>

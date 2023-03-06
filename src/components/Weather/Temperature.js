@@ -40,6 +40,7 @@ function Temperature({weather: {
           <p>{details}</p>
         </div>  
       </div>
+      <hr></hr>
       <div className={classes.weatherDetails}>
         <p>Wether details</p>
         <div className={classes.locate}>

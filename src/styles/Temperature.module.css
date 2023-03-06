@@ -48,7 +48,7 @@
 .locate {
     display: flex;
     flex-direction: row;
-    
+    height: 130px;
     justify-content: center;
 }
 
@@ -59,10 +59,11 @@
     cursor: pointer;
     border-radius: 5px;
     margin: 10px;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
     padding: 10px;
+    /* align-items: center; */
     width: 150px;
+    height: auto;
     background-color:#2b3135;
 
 }
@@ -70,6 +71,9 @@
 .locate span {
     font-size: 15px;
     font-weight: 700;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
     
 }
 .locate span:hover{
@@ -85,7 +89,7 @@
     display: flex;
     font-weight: 700;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 
 
 

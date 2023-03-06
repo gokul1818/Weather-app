@@ -1,11 +1,32 @@
-
-.content{
+.content {
     display: flex;
     /* justify-content: center; */
     align-items: center;
     /* flex-direction: row-reverse; */
     flex-direction: column;
-}.sear {
+}
+.droplist{
+    cursor: pointer;
+    border: 0.5px solid black;
+    padding-left: 20px;
+    /* border-radius: 10px; */
+}
+.droplist:hover{
+    transform: scale(1.1)
+    ;
+    color: white;
+    border: none;
+}
+.drop {
+    flex-direction: column;
+border-radius: 3px;
+    display: flex;
+background-color: rgb(124, 124, 124);
+    /* align-items: center; */
+    color: black;
+}
+
+.sear {
     /* width: 100%; */
     /* height: 100vh; */
 
@@ -53,7 +74,7 @@
 
 .searchBar input {
     color: rgb(255, 255, 255);
-/* width: 300px; */
+    /* width: 300px; */
     background-color: transparent;
     font-size: 16px;
     font-weight: bold;
@@ -103,11 +124,13 @@
     padding: 15px;
 }
 
-.metric:hover,.imperial:hover {
+.metric:hover,
+.imperial:hover {
     transform: scale(1.1);
     cursor: pointer;
     /* font-weight: 700; */
 }
-.or{
+
+.or {
     font-size: 10px;
 }

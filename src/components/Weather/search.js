@@ -1,12 +1,21 @@
 import classes from "@/styles/searchBar.module.css";
 // import classes from "@/styles/content.module.css";
 import { useState } from "react";
+
 import { UilSearch, UilLocationPinAlt } from "@iconscout/react-unicons";
 function SearchBar({ setQuery, units, setUnits }) {
-  const [city, setCity] = useState("");
+  const data = require("../../pages/city.json");
 
-  const change = (e) => {
+  const [city, setCity] = useState("");
+  // const [value, setvalue] = useState("");
+  // const [units, setUnits] = useState("");
+  const onchange = (e) => {
     setCity(e.currentTarget.value);
+  };
+
+  const onsearch = (searchterm) => {
+    setCity(searchterm);
+    console.log("search", searchterm);
   };
   const handleUnitsChange = (e) => {
     const selectedUnit = e.currentTarget.name;
@@ -31,11 +40,11 @@ function SearchBar({ setQuery, units, setUnits }) {
       });
     }
   };
-
   return (
     <div className={classes.content}>
       <div className={classes.sear}>
-        <form  onClick={handleSearchClick}>
+      <form>
+        
           <div className={classes.searchBar}>
             <UilSearch
               className={classes.icon}
@@ -44,10 +53,8 @@ function SearchBar({ setQuery, units, setUnits }) {
             />
             <input
               value={city}
-              onClick={handleSearchClick}
-              onChange={change}
+              onChange={onchange}
               type="text"
-              // type='submit'
               placeholder="Search for city...."
               className={classes.Search}
             />
@@ -57,13 +64,32 @@ function SearchBar({ setQuery, units, setUnits }) {
               size={15}
             />
           </div>
+          <div className={classes
+          .drop}>
+            {data
+              .filter((item) => {
+                const searchterm = city.toLowerCase();
+                const name = item.name.toLowerCase();
+                return (
+                  searchterm &&
+                  name.startsWith(searchterm) &&
+                  name !== searchterm
+                );
+              })
+              .slice(0, 8)
+              .map((item, index) => (
+                <div className={classes.droplist} key={index} onClick={() => onsearch(item.name)}>
+                  {item.name}
+                </div>
+              ))}
+          </div>
+          </form>
 
           <div className={classes.unit}>
             <button
               name="metric"
               onClick={handleUnitsChange}
               className={classes.metric}
-              // onClick={handleUnitsChange}
             >
               celsius
             </button>
@@ -72,12 +98,11 @@ function SearchBar({ setQuery, units, setUnits }) {
               name="imperial"
               onClick={handleUnitsChange}
               className={classes.imperial}
-              // onClick={handleUnitsChange}
             >
               Fahrenheit
             </button>
           </div>
-        </form>
+        
       </div>
     </div>
   );

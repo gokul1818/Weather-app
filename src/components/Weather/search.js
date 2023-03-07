@@ -43,7 +43,6 @@ function SearchBar({ setQuery, units, setUnits }) {
   return (
     <div className={classes.content}>
       <div className={classes.sear}>
-      <form>
         
           <div className={classes.searchBar}>
             <UilSearch
@@ -51,13 +50,17 @@ function SearchBar({ setQuery, units, setUnits }) {
               size={15}
               onClick={handleSearchClick}
             />
-            <input
+            {console.log(city,'city')}
+            <form onClick={handleSearchClick} >            <input
               value={city}
+              
               onChange={onchange}
               type="text"
               placeholder="Search for city...."
               className={classes.Search}
             />
+            </form>
+
             <UilLocationPinAlt
               className={classes.icon}
               onClick={handleLocationClick}
@@ -83,7 +86,6 @@ function SearchBar({ setQuery, units, setUnits }) {
                 </div>
               ))}
           </div>
-          </form>
 
           <div className={classes.unit}>
             <button

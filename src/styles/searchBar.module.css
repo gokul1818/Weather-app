@@ -12,16 +12,16 @@
     /* border-radius: 10px; */
 }
 .droplist:hover{
-    transform: scale(1.1)
-    ;
-    color: white;
+    /* transform: scale(1.1) */
+    
+    /* color: rgb(85, 85, 85); */
     border: none;
 }
 .drop {
     flex-direction: column;
 border-radius: 3px;
     display: flex;
-background-color: rgb(124, 124, 124);
+background-color:#fff;
     /* align-items: center; */
     color: black;
 }

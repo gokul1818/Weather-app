@@ -42,7 +42,7 @@ function Temperature({weather: {
         </div>  
       </div>
       <div className={classes.weatherDetails}>
-        <p>Wether details</p>
+        <p>Weather details</p>
         <div className={classes.locate}>
           <div>
             <UilWind />

@@ -1,6 +1,6 @@
 import classes from "@/styles/searchBar.module.css";
 // import classes from "@/styles/content.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { UilSearch, UilLocationPinAlt } from "@iconscout/react-unicons";
 function SearchBar({ setQuery, units, setUnits }) {
@@ -32,6 +32,21 @@ function SearchBar({ setQuery, units, setUnits }) {
     setCity("");
     return;
   };
+useEffect(()=>{
+  
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        let lat = position.coords.latitude;
+        let lon = position.coords.longitude;
+
+        setQuery({
+          lat,
+          lon,
+        });
+      });
+    }
+  },[setQuery]
+)
 
   const handleLocationClick = () => {
     if (navigator.geolocation) {

@@ -43,33 +43,40 @@ function search() {
 
     fetchWeather();
   }, [query, units]);
-console.log(weather)
+  console.log(weather);
   return (
     <div className={classes.content}>
       <div className={classes.title}>
         {/* <div className={classes.rain} ref={conti}></div> */}
       </div>
-
+    
       {weather ? (
         <>
-        {weather.temp >30 ? (
-          <div className={classes.bghot} >
-          <SearchBar setQuery={setQuery} units={units} setUnits={setUnits} />
-          <Time weather={weather} />
-          <Temperature weather={weather} />
-          <Forecast title={"hourlyForecast"} items={weather.hourly} />
-          <Forecast title={"DailyForecast"} items={weather.daily} />
-        </div>
-        ):(
-          <div className={classes.bgcloud} >
-          <SearchBar setQuery={setQuery} units={units} setUnits={setUnits} />
-          <Time weather={weather} />
-          <Temperature weather={weather} />
-          <Forecast title={"hourlyForecast"} items={weather.hourly} />
-          <Forecast title={"DailyForecast"} items={weather.daily} />
-        </div>
-          
-          ) }
+          {weather.temp > 30 ? (
+            <div className={classes.bghot}>
+              <SearchBar
+                setQuery={setQuery}
+                units={units}
+                setUnits={setUnits}
+              />
+              <Time weather={weather} />
+              <Temperature weather={weather} />
+              <Forecast title={"hourlyForecast"} items={weather.hourly} />
+              <Forecast title={"DailyForecast"} items={weather.daily} />
+            </div>
+          ) : (
+            <div className={classes.bgcloud}>
+              <SearchBar
+                setQuery={setQuery}
+                units={units}
+                setUnits={setUnits}
+              />
+              <Time weather={weather} />
+              <Temperature weather={weather} />
+              <Forecast title={"hourlyForecast"} items={weather.hourly} />
+              <Forecast title={"DailyForecast"} items={weather.daily} />
+            </div>
+          )}
           {/* <div className={classes.bgcloud} >
             <SearchBar setQuery={setQuery} units={units} setUnits={setUnits} />
             <Time weather={weather} />

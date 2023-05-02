@@ -112,14 +112,3 @@ color: rgb(255, 111, 0);
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width:600px) {
-   .viewSun{
-    display: flex;
-    flex-direction: column;
-
-    /* justify-content: center; */
-
-
-    /* flex-direction: ; */
-   } 
-}

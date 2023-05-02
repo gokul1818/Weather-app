@@ -1,6 +1,6 @@
 .scroll{
     max-width: 450px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 5px;
     /* overflow-y: scroll; */
     /* overflow-y: hidden; */
@@ -16,8 +16,10 @@ background:transparent;
   }
 
 .title {
+    /* margin-left: 15px; */
+
     display: flex;
-    justify-content: start;
+    justify-content: center;
     margin-top: 10px;
     /* padding-top: 10px; */
     /* font-weight: 400; */

@@ -58,7 +58,7 @@
 
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjWNVZ4vg2m4Jxto4a4Ud6AO_Dh-Jb7GPjxA&usqp=CAU");
     margin-top: 10px;
-    height: 300px;
+    height: 570px;
     background-size: cover;
     width: 375px;
     /* background-image: url("https://www.howitworksdaily.com/wp-content/uploads/2015/07/heatwave-1536x1025.jpg"); */
@@ -76,7 +76,8 @@
 
 .bghot {
     margin-top: 10px;
-    height: 300px;
+    height: 570px;
+
     background-size: cover;
     width: 375px;
     /* background-image: url("https://www.howitworksdaily.com/wp-content/uploads/2015/07/heatwave-1536x1025.jpg"); */

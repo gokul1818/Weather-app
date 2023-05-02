@@ -60,7 +60,8 @@
     height: 900px;
 
     background-size: cover;
-    width: 490px;
+    width: 425px;
+
     /* background-image: url("https://www.howitworksdaily.com/wp-content/uploads/2015/07/heatwave-1536x1025.jpg"); */
     background-image: linear-gradient(to bottom, transparent, #000000), url("https://images.pexels.com/photos/3265460/pexels-photo-3265460.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-position: center;
@@ -80,7 +81,8 @@
     height: 900px;
 
     background-size: cover;
-    width: 490px;
+    width: 425px;
+
 
     /* background-image: url("https://www.howitworksdaily.com/wp-content/uploads/2015/07/heatwave-1536x1025.jpg"); */
     background-image: linear-gradient(to bottom, transparent, #000000), url("https://images.pexels.com/photos/3756718/pexels-photo-3756718.jpeg?auto=compress&cs=tinysrgb&w=600");
@@ -101,7 +103,7 @@
     height: 900px;
 
     background-size: cover;
-    width: 490px;
+    width: 425px;
 
     background-image: linear-gradient(to bottom, transparent, #000000), url("https://www.howitworksdaily.com/wp-content/uploads/2015/07/heatwave-1536x1025.jpg");
     background-position: center;

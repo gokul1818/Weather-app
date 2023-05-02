@@ -27,10 +27,7 @@ function Temperature({weather: {
   return (
 
     <div className={classes.climate}>
-      {
-// console.log(temp_max)
-
-      }
+    
       <div className={classes.details}>
         <div>
         <p className={classes.temp} >{`${temp.toFixed()}°`}</p>

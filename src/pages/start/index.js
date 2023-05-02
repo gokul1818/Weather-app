@@ -51,7 +51,7 @@ function search() {
       </div>
     
       {weather ? (
-        <>
+        <>        
           {weather.temp > 30 ? (
             <div className={classes.bghot}>
               <SearchBar
@@ -64,7 +64,7 @@ function search() {
               <Forecast title={"hourlyForecast"} items={weather.hourly} />
               <Forecast title={"DailyForecast"} items={weather.daily} />
             </div>
-          ) : (
+          ) : weather.temp>20 ? (
             <div className={classes.bgcloud}>
               <SearchBar
                 setQuery={setQuery}
@@ -76,15 +76,22 @@ function search() {
               <Forecast title={"hourlyForecast"} items={weather.hourly} />
               <Forecast title={"DailyForecast"} items={weather.daily} />
             </div>
-          )}
-          {/* <div className={classes.bgcloud} >
-            <SearchBar setQuery={setQuery} units={units} setUnits={setUnits} />
+          ):(
+            <div className={classes.bgcool}>
+            <SearchBar
+              setQuery={setQuery}
+              units={units}
+              setUnits={setUnits}
+            />
             <Time weather={weather} />
             <Temperature weather={weather} />
             <Forecast title={"hourlyForecast"} items={weather.hourly} />
             <Forecast title={"DailyForecast"} items={weather.daily} />
-          </div> */}
-        </>
+          </div>
+          )}
+        
+          </>
+
       ) : (
         <div className={classes.cloud} ref={container}></div>
       )}

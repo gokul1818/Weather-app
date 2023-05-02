@@ -54,16 +54,36 @@
     display: flex;
 }
 
-.bgcloud {
+.bgcool {
 
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjWNVZ4vg2m4Jxto4a4Ud6AO_Dh-Jb7GPjxA&usqp=CAU");
     margin-top: 10px;
     height: 900px;
 
     background-size: cover;
     width: 375px;
     /* background-image: url("https://www.howitworksdaily.com/wp-content/uploads/2015/07/heatwave-1536x1025.jpg"); */
-    background-image: linear-gradient(to bottom, transparent, #000000),url("https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/smap-weather.jpg");
+    background-image: linear-gradient(to bottom, transparent, #000000), url("https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+    /* background-size: contain; */
+    background-position: right;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    background-color: #000;
+
+}
+
+.bgcloud {
+
+    margin-top: 10px;
+    height: 900px;
+
+    background-size: cover;
+    width: 375px;
+    /* background-image: url("https://www.howitworksdaily.com/wp-content/uploads/2015/07/heatwave-1536x1025.jpg"); */
+    background-image: linear-gradient(to bottom, transparent, #000000), url("https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
     background-position: center;
     background-repeat: no-repeat;
     padding: 5px;

@@ -7,17 +7,12 @@
 }
 .droplist{
     cursor: pointer;
-    border: 0.5px solid black;
-    padding-left: 25px;
+    /* border: 0.5px solid black; */
+    padding-left: 50px;
     padding-top: 5px;
     /* border-radius: 10px; */
 }
-.droplist:hover{
-    /* transform: scale(1.1) */
-    
-    /* color: rgb(85, 85, 85); */
-    border: none;
-}
+
 .drop {
     flex-direction: column;
 border-radius: 3px;
@@ -25,9 +20,9 @@ border-radius: 3px;
     max-height: 73px;
     overflow-y: scroll;
 
-background-color:#fff;
+background-color:#1b1919;
     /* align-items: center; */
-    color: black;
+    color: rgb(238, 238, 238);
 }
 .drop::-webkit-scrollbar {
     /* display: ; */
